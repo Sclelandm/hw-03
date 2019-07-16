@@ -7,11 +7,33 @@
     <title>Document</title>
     <link src="./assets/css/reset.css" type="text/css"/> 
     <link src="./assets/css/style.css" type="text/css"/> 
-</head>
+</head>b
 <body>
-    <div>
-        helow world
-    </div>
-        <script src="assets/javascript/game.js"></script>
-</body>
+       <header> Guess which letter Im thinking </header>
+       
+       <div>
+            var possible ("a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z")
+            var wins = 0;
+            var losses = 0;
+            var guesses = 0;
+            var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+            var playerguess = event.key;
+            
+            console.log (computerChoice)
+            
+            document.onkeypress = function(event){
+                if(playerGuess == computerChoice){
+                    wins++;}
+                if else{guesses++;}
+                if(guesses==3){
+                    losses++;
+                }
+            }
+            
+
+       
+        </div>
+
+    
+
 </html>
